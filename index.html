@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="profile-parent-card">
+        <div class="profile-child-card">
+          <div class="profile-data">
+          <img src="./images/image-jeremy.png" alt="" class="profile-img">
+          <div class="profile-details">
+            <p>Report for</p>
+            <h3>Jeremy Robson</h3>
+          </div>
+        </div>
+        </div>
+        <div class="Time-periods">
+          <p id="Daily">Daily</p>
+          <p id="Weekly">Weekly</p>
+          <p id="Monthly">Monthly</p>
+        </div>
+      </div>
+
+      <div class="work-parent-card parent-card">
+        <img src="./images/icon-work.svg" alt="" class="icons">
+        <div class="child-card">
+          <div class="heading">
+            <span class="title">Work</span>
+            <img src="./images/icon-ellipsis.svg" alt=""  >
+          </div>
+          <div class="time-periods">
+            <span class="time"></span>
+            <p class="previous-time"></p>  
+          </div>
+        </div>
+      </div>
+      <div class="play-parent-card parent-card">
+        <img src="./images/icon-play.svg" alt=""  class="icons">
+        <div class=" child-card">
+          <div class="heading">
+            <span class="title">Play</span>
+            <img src="./images/icon-ellipsis.svg" alt=""  >
+          </div>
+          <div class="time-periods">
+            <span class="time"></span>
+            <p class="previous-time"></p>  
+          </div>
+        </div>
+      </div>
+      <div class="study-parent-card parent-card">
+        <img src="./images/icon-study.svg" alt=""  class="icons">
+        <div class="child-card">
+          <div class="heading">
+            <span class="title">Study</span>
+            <img src="./images/icon-ellipsis.svg" alt=""  >
+          </div>
+          <div class="time-periods">
+            <span class="time"></span>
+            <p class="previous-time"> </p>  
+          </div>
+        </div>
+      </div>
+
+      <div class="exercise-parent-card parent-card">
+        <img src="./images/icon-exercise.svg" alt="" class="icons" >
+        <div class=" child-card">
+          <div class="heading">
+            <span class="title">Exercise</span>
+            <img src="./images/icon-ellipsis.svg" alt=""  >
+          </div>
+          <div class="time-periods">
+            <span class="time"></span>
+            <p class="previous-time"></p>  
+          </div>
+        </div>
+      </div>
+
+      <div class="social-parent-card parent-card">
+        <img src="./images/icon-social.svg" alt=""  class="icons">
+        <div class=" child-card">
+          <div class="heading">
+            <span class="title">Social</span>
+            <img src="./images/icon-ellipsis.svg" alt=""  >
+          </div>
+          <div class="time-periods">
+            <span class="time"></span>
+            <p class="previous-time"></p>  
+          </div>
+        </div>
+      </div>
+
+      <div class="selfcare-parent-card parent-card">
+        <img src="./images/icon-self-care.svg" alt=""  class="icons">
+        <div class="child-card">
+          <div class="heading">
+            <span class="title">Self-Care</span>
+            <img src="./images/icon-ellipsis.svg" alt="" >
+          </div>
+          <div class="time-periods">
+            <span class="time"></span>
+            <p class="previous-time"></p>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

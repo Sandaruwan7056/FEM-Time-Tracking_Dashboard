@@ -1,0 +1,253 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red2: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Rubik;
+    background-color: var(--Very-dark-blue);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+
+}
+
+.profile-img {
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.profile-parent-card {
+    width: 328px;
+    height: 205px;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.profile-child-card {
+    position: absolute;
+    background-color: var(--Blue);
+    width: 100%;
+    height: 133px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.profile-data {
+    display: flex;
+}
+
+.profile-details {
+    padding-left: 10px;
+    line-height: 1.4rem;
+}
+
+.profile-details p {
+    color: white;
+    font-size: smaller;
+    opacity: 50%;
+}
+
+.profile-details h3 {
+    color: white;
+    font-weight: 300;
+}
+
+.Time-periods {
+    bottom: 0%;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#Daily {
+    color: white;
+    opacity: 50%;
+}
+
+#Daily:hover {
+    opacity: 100%;
+}
+
+#Weekly {
+    color: white;
+    opacity: 50%;
+}
+
+#Weekly:hover {
+    opacity: 100%;
+}
+
+#Monthly {
+    color: white;
+    opacity: 50%;
+}
+
+#Monthly:hover {
+    opacity: 100%;
+}
+
+.parent-card {
+    background-color: var(--Light-red);
+    width: 328px;
+    height: 161px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.child-card {
+    position: absolute;
+    width: 100%;
+    height: 122px;
+    background-color: var(--Dark-blue);
+    bottom: 0%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+.child-card:hover{
+    background-color: var(--Blue);
+}
+.icons {
+    position: absolute;
+    right: 0%;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.heading img {
+    height: 5px;
+    cursor: pointer;
+}
+
+.time-periods {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-parent-card {
+    background-color: var(--Soft-blue);
+}
+
+.study-parent-card {
+    background-color: var(--Light-red2);
+}
+
+.exercise-parent-card {
+    background-color: var(--Lime-green);
+}
+
+.social-parent-card {
+    background-color: var(--Violet);
+}
+
+.selfcare-parent-card {
+    background-color: var(--Soft-orange);
+}
+
+.title {
+    font-weight: 500;
+
+}
+
+.previous-time {
+    font-size: smaller;
+    color:var(--Pale-Blue);
+    font-weight: 500;
+}
+
+.time {
+    font-size: x-large;
+    font-weight: 300;
+}
+
+
+@media(min-width:1000px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr ;
+        gap: 20px;
+    }
+    .profile-parent-card{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-top: 0;
+        width: 256px;
+       height: 100%;
+    }
+    .profile-child-card{
+        height: 350px;
+    }
+    .parent-card{
+        width: 256px;
+        height: 247px;
+    }
+    .child-card{
+        height: 197px;
+    }
+    .profile-data{
+        display: block;
+    }
+    .profile-img{
+        width: 70px;
+    }
+    .profile-details{
+        padding: 40px 0;
+    }
+    .profile-details h3{
+        font-size: xx-large;
+        line-height: 2.5rem;
+    }
+    .Time-periods{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px 20px;
+        line-height: 2.5rem;
+    }
+
+    .time-periods{
+        display: block;
+    }
+
+    .time{
+        font-size: 3.5rem;
+    }
+    .previous-time{
+        padding-top: 20px;
+    }
+}
